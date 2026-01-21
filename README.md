@@ -50,10 +50,23 @@ Dessa regler säkerställer att ogiltig eller inkonsekvent data inte kan sparas.
 ---
 
 ## Console App
-En Console App i .NET används för att:
-- Koppla till SQL Server Express
-- Hämta data från databasen med Entity Framework Core
-- Visa produkter från databasen i konsolen
+🖥️ Console App (.NET + EF Core)
+
+Projektet innehåller även en Console App i .NET som är kopplad till databasen MiniEhandelDB via Entity Framework Core.
+
+I Console Appen har jag:
+
+Skapat en Product-klass som matchar tabellen i databasen
+
+Skapat ett DbContext för koppling mot SQL Server Express
+
+Kopplat upp applikationen mot databasen
+
+Hämtat alla produkter från databasen
+
+Skrivit ut produktinformation snyggt i konsolen (SELECT-query)
+
+Detta visar hur C#-kod kan användas för att läsa data från en relationsdatabas.
 
 Applikationen använder EF Core för att översätta C#-kod till SQL-frågor.
 
